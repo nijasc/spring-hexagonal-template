@@ -21,8 +21,8 @@ import org.springframework.scheduling.annotation.EnableScheduling
 @OpenAPIDefinition(servers = [Server(url = "/api/v1", description = "Request from the current instance.")])
 @EnableScheduling
 @EnableAsync
-class AppRunner
+class Application
 
 fun main(args: Array<String>) {
-    runApplication<AppRunner>(*args)
+    runApplication<Application>(*args)
 }
